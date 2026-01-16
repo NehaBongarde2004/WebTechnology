@@ -11,7 +11,38 @@ console.log(typeof(num_str));
 
 //activity1-convert(number-string)(string-number)(bool-number)()
 
+//Activity
+//1.bool to number
+console.log("Conversion")
+let isFollow = true;
+let boolNum = Number(isFollow);
+console.log(isFollow);
+console.log(boolNum);
+console.log(typeof(boolNum));
 
+//2.number to bool
+let num1 = 23;
+let numBool = Boolean(num1);
+console.log(num1);
+console.log(numBool);
+console.log(typeof(numBool));
+
+//3.bool to string
+let isDeal = false;
+let strBool = String(isDeal);
+console.log(isDeal);
+console.log(strBool);
+console.log(typeof(strBool));
+
+//4.string to bool
+let str3 = "Hello";
+let boolStr = Boolean(str3);
+console.log(str3);
+console.log(boolStr);
+console.log(typeof(boolStr));
+
+
+console.log("Arithmetic operators")
 //Operations
 console.log(2+2);
 console.log(2-2);
