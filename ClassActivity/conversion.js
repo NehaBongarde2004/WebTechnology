@@ -85,13 +85,6 @@ console.log(true)
 console.log(+true)
 console.log(+ "")
 
-let gameCounter = 100
-gameCounter++
-console.log(gameCounter)
-
-let scoreCounter = 200
-++scoreCounter
-console.log(scoreCounter)
 
 /*
 
@@ -113,4 +106,12 @@ console.log(+ "") --> 0  --> same as above
 
 
 */
+
+let gameCounter = 100
+gameCounter++
+console.log(gameCounter)
+
+let scoreCounter = 200
+++scoreCounter
+console.log(scoreCounter)
 

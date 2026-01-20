@@ -15,7 +15,7 @@
     What is web technology?
     -->Web Technology means developing websites and web applications.
 
-    Real-time ex - Amazon,Netflix
+    Real-time example - Amazon,Netflix
 
     what is javaScript?
     --> It is Object-Oriented Programming Language used for making page interactive.It is also used for backend.
