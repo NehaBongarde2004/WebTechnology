@@ -9,20 +9,28 @@ function SubmitButton(){
     document.getElementById('passwordError').innerHTML = "";
 
     let isValid = true;
-    if(name == ""){
+    if(name === ""){
         document.getElementById('nameError').innerHTML = "Name field is required.";
         isValid = false;
     }
 
-    if(email == ""){
+    if(email === ""){
         document.getElementById('emailError').innerHTML = "Email field is required.";
         isValid = false;
     }
+    else if(!email.includes("@") || !email.includes(".")){
+        document.getElementById('emailError').innerHTML = "Enter valid email";
+        isValid = false;
+    }
 
-    if(password == ""){
+    if(password === ""){
         document.getElementById('passwordError').innerHTML = "Password field is required.";
         isValid = false;
     }
+    else if(password.lenght < 6 ){
+        document.getElementById('passwordError').innerHTML = "Password must be at least 6 characters";
+        isValid = false;
+    }
     
-
+    return isValid;
 }
