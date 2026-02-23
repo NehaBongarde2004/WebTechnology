@@ -15,5 +15,17 @@ DOM manipulation means changing html using JS
 e.g show error msg,display success msg,clear input field,change text color to red
 
 
+document.getElementById("title");
+document.getElementById("title").innerHTML = "Hello Neha";
+document.getElementsByClassName("list-item");
+document.getElementById("title").className = "bg-red";
+document.querySelector("h2");
+document.querySelectorAll("h2");
+document.querySelector(".list-item");
+document.querySelectorAll(".list-item");
+document.getElementById("title").innerText;
+document.getElementById("title").textContent;
+
+
 
 */
