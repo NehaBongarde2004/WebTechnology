@@ -22,6 +22,5 @@
 
     File extension used for JavaScript is .js 
 
-    node.js is used to run the JS code outside the browser.
-
+    node.js is used to run the JS code outside the browser
 */

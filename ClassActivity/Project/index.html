@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quizcontainer">
+        <div class="mainquizcontainer">
+            <h2>Add Question (Admin)</h2>
+
+            <input id="qText" placeholder="Enter Question">
+            <input id="opt1" placeholder="Option 1">
+            <input id="opt2" placeholder="Option 2">
+            <input id="opt3" placeholder="Option 3">
+            <input id="opt4" placeholder="Option 4">
+            <input id="correct" placeholder="Correct Answer">
+
+            <button onclick="addQuestion()">Add Question</button>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz" class="quizcontainer">
+        <div class="mainquizcontainer">
+
+            <h1 class="heading">Quiz App</h1>
+
+            <h2 id="question" class="questiontext">
+            </h2>
+
+            <div id="options" class="optioncontainer">
+            </div>
+
+            <button id="nextBtn" class="submitbutton">Next</button>
+
+        </div>
+    </div>
+    <div class="quizcontainer">
+        <div class="mainquizcontainer">
+            <div id="result" class="result" style="display: none;">
+                <h2 style="text-align: center;">Result</h2>
+                <br>
+                <p>Your Score: <span id="score"></span></p>
+            </div> 
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

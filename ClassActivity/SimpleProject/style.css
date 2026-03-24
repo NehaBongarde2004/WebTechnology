@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.clock-container{
+    text-align: center;
+    color: white;
+}
+#clock{
+    font-size: 50px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}

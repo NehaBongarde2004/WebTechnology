@@ -20,3 +20,13 @@ let myTimeSamp = Date.now()
 console.log(myTimeSamp)
 console.log(Date.now())
 console.log(Date.now()/1000)
+
+//show exact time
+let now = new Date();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let seconds = now.getSeconds();
+
+console.log(`${hours}:${minutes}:${seconds}`);
+
+

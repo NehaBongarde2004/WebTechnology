@@ -24,7 +24,7 @@ console.log(undefined == 0)
 console.log(undefined <= 0)
 
 console.log("2"=== 2)
-console.log("2" ==2)
+console.log("2" == 2)
 
 //activity3-check why true/false is coming using null and undefined
 
@@ -37,12 +37,12 @@ console.log(null > 0)   --> 0 > 0 ->false
 -->null is converted to number  null ->0 
 
 console.log(null == 0) --> undefined == 0 -> output - false
--->== rules:
+--> == rules:
 null is only equal to undefined
 NOT equal to any number
 
 console.log(null <= 0) --> 0 <= 0 --> output - true
--->null → 0
+-->null -> 0
 
 //all about undefined
 console.log(undefined > 0) --> NaN > 0 --> output - false

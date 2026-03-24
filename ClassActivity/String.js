@@ -52,7 +52,11 @@ console.log(myStr.concat(" everyday.")); //add the 1 string into the original st
 
 
 
-
+//multicast delegate ex
+//replace methods with lamda expression
+//sort list using lamba
+//where we use delegate and lamda in company
+//what is LINQ queries
 
 
 

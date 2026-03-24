@@ -1,0 +1,20 @@
+Activity-
+1.diff betn package.json and package.lock.json
+2.Diffn betn dev dependency and dependencies
+3.add the logic using routes and js 
+4.see get,post,put,delete methods
+
+steps-
+1.npm init
+2.npm install express
+3.create entry point index.js
+
+
+Routing in express js - 
+Routing refers to determing how an application respose to a client request to a specific url  and http mail.
+
+component of routing - url path,http method,handler functions
+
+create 3 - 4 routes
+
+ 

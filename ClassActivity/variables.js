@@ -59,13 +59,17 @@ console.log(PI)
 //block of scope
 var a = 10
 let b = 20
+const c = 30
 {
     var a = 200
     let b = 300
+    const c = 60
     console.log(a)
     console.log(b)
+    console.log(c);
+    
 }
-console.log(a,b)
+console.log(a,b,c)
 
 
 
