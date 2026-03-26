@@ -14,8 +14,8 @@ fetch("https://jsonplaceholder.typicode.com/users").then((response) =>{
     console.log(error)
 })
 /*
-1.
-2.asyn await ex wih fetch method
+1.understand above ex
+2.asyn await ex with fetch method
 3.fetch user  display name in html list
 4.fetch post show only 1st 5 record
 5.create a fake promise manually resolve after 3 sec reject after 3 sec
