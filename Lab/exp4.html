@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form validation using DOM</title>
+    
 </head>
-<body>
-    <h1>Registration Form</h1>
-    <form onsubmit="return SubmitButton()">
-        Name : 
-        <input type="text" id="name">
-        <span id="nameError"></span>
-        <br>
-        Email :
-        <input type="text" id="email">
-        <span id="emailError"></span>
-        <br>
-        Password :
-        <input type="password" id="password">
-        <span id="passwordError"></span>
-        <br>
-        <input type="submit" id="submit">
-    </form>
-    <script src = "exp4.js"></script>
 
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form onsubmit="return SubmitButton()">
+            Name : 
+            <input type="text" id="name">
+            <span id="nameError"></span>
+            <br>
+            Email :
+            <input type="text" id="email">
+            <span id="emailError"></span>
+            <br>
+            Password :
+            <input type="password" id="password">
+            <span id="passwordError"></span>
+            <br>
+            <input type="submit" id="submit">
+        </form>
+    </div>
 </body>
+
 </html>

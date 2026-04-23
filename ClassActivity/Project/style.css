@@ -1,63 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: darkcyan;
-    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
 }
 
-.quizcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.mainquizcontainer {
-    width: 80%;
-    max-width: 400px;
-    background-color: white;
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
 }
 
-input {
-    width: 100%;
+textarea {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+select, input, button {
+    margin: 5px;
     padding: 8px;
-    margin: 5px 0;
+    font-size: 14px;
 }
 
-.heading {
-    text-align: center;
-}
-
-.optioncontainer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.option-btn {
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: antiquewhite;
+button {
     cursor: pointer;
-    text-align: left;
-}
-
-.option-btn.selected {
-    background-color: lightgreen;
-    border-color: green;
-}
-
-.submitbutton, button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: darkturquoise;
-    border: none;
-    cursor: pointer;
-}
-
-.result {
-    text-align: center;
 }

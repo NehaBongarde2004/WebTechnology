@@ -1,103 +1,58 @@
-let quizData = JSON.parse(localStorage.getItem("quizQuestions")) || [];
+const textArea = document.getElementById("textArea");
+const preview = document.getElementById("preview");
 
-let currentQuestionIndex = 0;
-let score = 0;
-let selectedOption = null;
+const fontFamily = document.getElementById("fontFamily");
+const fontSize = document.getElementById("fontSize");
+const colorPicker = document.getElementById("colorPicker");
 
-const questionElement = document.getElementById("question");
-const optionsContainer = document.getElementById("options");
-const nextBtn = document.getElementById("nextBtn");
-const quizContainer = document.getElementById("quiz");
-const resultContainer = document.getElementById("result");
-const scoreContainer = document.getElementById("score");
+const boldBtn = document.getElementById("boldBtn");
+const italicBtn = document.getElementById("italicBtn");
+const resetBtn = document.getElementById("resetBtn");
 
-/* ADD QUESTION (ADMIN) */
-function addQuestion() {
-    const question = qText.value;
-    const options = [opt1.value, opt2.value, opt3.value, opt4.value];
-    const answer = correct.value;
+// Update preview text
+textArea.addEventListener("input", function () {
+    preview.textContent = textArea.value;
+});
 
-    if (!question || options.includes("") || !answer) {
-        alert("Please fill all fields");
-        return;
-    }
+// Change font family
+fontFamily.addEventListener("change", function () {
+    preview.style.fontFamily = fontFamily.value;
+});
 
-    quizData.push({ question, options, answer });
-    localStorage.setItem("quizQuestions", JSON.stringify(quizData));
+// Change font size
+fontSize.addEventListener("input", function () {
+    preview.style.fontSize = fontSize.value + "px";
+});
 
-    alert("Question added");
+// Change color
+colorPicker.addEventListener("input", function () {
+    preview.style.color = colorPicker.value;
+});
 
-    qText.value = opt1.value = opt2.value = opt3.value = opt4.value = correct.value = "";
-}
-
-/* START QUIZ */
-function startQuiz() {
-    if (quizData.length === 0) {
-        alert("Add at least one question");
-        return;
-    }
-
-    document.querySelectorAll(".quizcontainer")[0].style.display = "none";
-    quizContainer.style.display = "flex";
-
-    loadQuestion();
-}
-
-/* LOAD QUESTION */
-function loadQuestion() {
-    optionsContainer.innerHTML = "";
-    selectedOption = null;
-
-    const currentQuestion = quizData[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-
-    currentQuestion.options.forEach(option => {
-        const button = document.createElement("button");
-        button.textContent = option;
-        button.classList.add("option-btn");
-
-        button.onclick = () => {
-            selectedOption = option;
-            document.querySelectorAll(".option-btn")
-                .forEach(btn => btn.classList.remove("selected"));
-            button.classList.add("selected");
-        };
-
-        optionsContainer.appendChild(button);
-    });
-}
-
-/* NEXT BUTTON */
-nextBtn.onclick = () => {
-    if (!selectedOption) {
-        alert("Select an option");
-        return;
-    }
-
-    if (selectedOption === quizData[currentQuestionIndex].answer) {
-        score++;
-    }
-
-    currentQuestionIndex++;
-
-    if (currentQuestionIndex === quizData.length) {
-        showResult();
+// Bold toggle
+boldBtn.addEventListener("click", function () {
+    if (preview.style.fontWeight === "bold") {
+        preview.style.fontWeight = "normal";
     } else {
-        loadQuestion();
-        if (currentQuestionIndex === quizData.length - 1) {
-            nextBtn.textContent = "Submit";
-        }
+        preview.style.fontWeight = "bold";
     }
-};
+});
 
-/* SHOW RESULT */
-function showResult() {
-    quizContainer.style.display = "none";
-    resultContainer.style.display = "flex";
-    scoreContainer.textContent = `${score} / ${quizData.length}`;
-}
+// Italic toggle
+italicBtn.addEventListener("click", function () {
+    if (preview.style.fontStyle === "italic") {
+        preview.style.fontStyle = "normal";
+    } else {
+        preview.style.fontStyle = "italic";
+    }
+});
 
-/* RESTART */
-function restartQuiz() {
-    location.reload();
-}
+// Reset all styles
+resetBtn.addEventListener("click", function () {
+    preview.style = "";
+    textArea.value = "";
+    preview.textContent = "";
+    fontSize.value = "";
+    fontFamily.value = "Arial";
+    colorPicker.value = "#000000";
+});

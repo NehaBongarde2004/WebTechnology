@@ -25,6 +25,9 @@ console.log(undefined <= 0)
 
 console.log("2"=== 2)
 console.log("2" == 2)
+console.log(typeof(undefined));
+console.log(typeof(null));
+
 
 //activity3-check why true/false is coming using null and undefined
 

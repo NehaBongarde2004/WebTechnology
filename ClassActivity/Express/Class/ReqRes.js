@@ -15,4 +15,32 @@ Activity -
 1.detail study of query parameter wih3,4 ex with real ex
 2.where use in company level
 
+Response - the response object sends data back to the cliet
+common methods -
+-res.send()
+-res.json()
+-res.status()
+-res.sendFile()
+
+app.get('/student',(req,res)=>{
+    res.json({
+        name:"Neha",
+        course:"AIML"
+        });
+    });
+});
+
+o/p -> {
+        "name":"Neha",
+        "course":"AIML"
+        }
+
+app.get('/search', (req, res) => {
+  const name = req.query.name;
+  res.send(`Search for ${name}`);
+});
+
+
+URL :- /search?name=Job
+
 */

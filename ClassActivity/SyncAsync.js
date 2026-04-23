@@ -32,3 +32,46 @@ Activities-
 4.api fetch activity
 
 */
+
+//1.guess the output game
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Async Task");
+}, 0);
+
+console.log("End");
+
+//2.blocking non-blocking code 2 ex
+Promise.resolve().then(() => {
+    console.log("Promise");
+});
+
+console.log("Hello");
+
+console.log("1");
+
+setTimeout(() => console.log("2"), 1000);
+
+Promise.resolve().then(() => console.log("3"));
+
+console.log("4");
+
+function blocking() {
+    console.log("Start");
+
+    for(let i = 0; i < 1e9; i++) {} // heavy task
+
+    console.log("End");
+}
+
+blocking();
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Async Task");
+}, 2000);
+
+console.log("End");
+

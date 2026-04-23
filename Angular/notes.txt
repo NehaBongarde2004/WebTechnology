@@ -1,0 +1,29 @@
+before angular50  we use               now adays we use angular 20 + version so modules are optional 
+u can now use stand alone components. 
+
+Directives -->
+think a directives as magic wands that can change your web page without rewriting notes 
+there are two types of 
+1. structureal directives 
+2. attributes directives 
+
+1. structureal directives ->
+    change the structure of your page (nge , ngfor , ngswitch)
+
+2. attributes directives -> used for styles 
+    ngstyle  
+
+Activity 1 -> how to use 1. structureal directives 2. attributes directives 
+
+Activity 2 -> how we can use switch case ,if else , for loops in angular with examples
+
+Routing -->
+    Navigation between one page to another page is routing .
+
+
+Services & dependency injection- 
+services is like a helper class.
+it is used to store data or share logic so many components can use.
+instead of writing the same code in every compoenets,we can write it once in a service
+
+Activity - write a 2 exp which services with angular and learn more about dependency injection

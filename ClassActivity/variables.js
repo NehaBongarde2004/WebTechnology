@@ -20,7 +20,7 @@ Q.What "    "         "   (==) and (===)?
 
 scope-In {} curly braces if we declare any variable then it is accessiable in that block only.
 
-Limitation of using var-->When we use var in scope and then print it outside the scope then it take value in scope the the
+Limitation of using var-->When we use var in scope and then print it outside the scope then it take value in scope that the
 value outside scope we declared.
 
 
