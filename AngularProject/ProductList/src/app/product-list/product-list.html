@@ -1,0 +1,47 @@
+<h2 class="title">Product List</h2>
+
+
+<input 
+  type="text" 
+  placeholder="Search product..." 
+  [(ngModel)]="searchText"
+  class="search-box"
+/>
+
+
+<p class="count">Total Products: {{products.length}}</p>
+
+
+<p class="no-result" 
+   *ngIf="products.length > 0 && 
+   !products.some(p => p.name.toLowerCase().includes(searchText.toLowerCase()))">
+  No product found
+</p>
+
+
+<div class="product-container">
+
+  <div class="card" *ngFor="let p of products">
+
+    <div *ngIf="p.name.toLowerCase().includes(searchText.toLowerCase())">
+
+     
+      <h3>{{p.name}}</h3>
+
+      
+      <p class="price">₹{{p.price}}</p>
+
+  
+      <p class="category">{{p.category}}</p>
+
+     
+      <p class="rating">Rating: {{p.rating}}/5</p>
+
+
+      <button (click)="addToCart(p)">Add to Cart</button>
+
+    </div>
+
+  </div>
+
+</div>
