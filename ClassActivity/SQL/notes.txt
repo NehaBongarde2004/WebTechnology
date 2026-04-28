@@ -1,0 +1,35 @@
+sql -> Structure Query Language
+is used to communication between real time database
+
+sql->
+MySQL
+Postgre
+SQLserver
+
+Real-time example-
+
+
+Interview - store processor
+
+Activity-
+create table - Create table Student(id INT,name VARCHAR(50),email VARCHAR(50),course VARCHAR(50));
+insert data - Insert into Student values(1,"Neha","neha@gmail.com","AIML");
+update data - 
+delete data - 
+
+
+Websocket - websocket allows us real time communication HTTP -> request and response
+                                                        websocket -> continuous connection
+real example - whatsapp,live stock price update,online gaming,notification
+if we install websocket - npm install websocket 
+
+
+What ORM - instead of writing sql query we use javascript object
+Without ORM - select * from student;
+
+Activity - 
+deep study websocket
+understand and 1 example 
+
+          
+
