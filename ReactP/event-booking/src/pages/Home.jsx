@@ -6,7 +6,13 @@ function Home({ addBooking }) {
     <div>
       <h2>All Events</h2>
 
-      <div className="grid">
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center"
+        }}
+      >
         {events.map((event) => (
           <EventCard key={event.id} event={event} addBooking={addBooking} />
         ))}
