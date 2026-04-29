@@ -26,6 +26,4 @@ document.querySelectorAll(".list-item");
 document.getElementById("title").innerText;
 document.getElementById("title").textContent;
 
-
-
 */
